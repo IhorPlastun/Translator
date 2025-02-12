@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TranslatorApp: App {
+    
+    // MARK: - AppCoordinator
+    @StateObject private var appCoordinator = AppCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            appCoordinator.rootView
         }
     }
 }
