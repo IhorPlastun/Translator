@@ -12,6 +12,22 @@
 		AB4B3BB22D5A1CBE001D3F63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4B3BAA2D5A1CBE001D3F63 /* Preview Assets.xcassets */; };
 		AB4B3BB32D5A1CBE001D3F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4B3BAC2D5A1CBE001D3F63 /* Assets.xcassets */; };
 		AB4B3BB72D5A1F54001D3F63 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BB62D5A1F54001D3F63 /* Font.swift */; };
+		AB4B3BC02D5A3ED7001D3F63 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BBF2D5A3ED7001D3F63 /* MainView.swift */; };
+		AB4B3BC62D5A3F92001D3F63 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BC52D5A3F92001D3F63 /* SettingsView.swift */; };
+		AB4B3BC82D5A4088001D3F63 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BC72D5A4088001D3F63 /* MainViewModel.swift */; };
+		AB4B3BCB2D5A718E001D3F63 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BCA2D5A718E001D3F63 /* AppCoordinator.swift */; };
+		AB4B3BCE2D5A71F4001D3F63 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BCD2D5A71F4001D3F63 /* MainCoordinator.swift */; };
+		AB4B3BD02D5A7260001D3F63 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BCF2D5A7260001D3F63 /* MainFlow.swift */; };
+		AB4B3BD32D5A7D19001D3F63 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BD22D5A7D19001D3F63 /* MainModel.swift */; };
+		AB4B3BD92D5B68D2001D3F63 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BD82D5B68D2001D3F63 /* TabModel.swift */; };
+		AB4B3BDD2D5B7EA6001D3F63 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BDC2D5B7EA6001D3F63 /* TabBarView.swift */; };
+		AB4B3BDF2D5B8179001D3F63 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BDE2D5B8179001D3F63 /* SettingsCoordinator.swift */; };
+		AB4B3BE12D5B82B7001D3F63 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BE02D5B82B7001D3F63 /* SettingsModel.swift */; };
+		AB4B3BE32D5B85AE001D3F63 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BE22D5B85AE001D3F63 /* SettingsViewModel.swift */; };
+		AB4B3BE72D5B8F63001D3F63 /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BE62D5B8F63001D3F63 /* HideTabBar.swift */; };
+		ABEE17712D5CEA7500A78C21 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE17702D5CEA7500A78C21 /* SpeechRecognizer.swift */; };
+		ABEE17772D5D181700A78C21 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE17762D5D181700A78C21 /* ResultView.swift */; };
+		ABEE177A2D5D1B5D00A78C21 /* SpeechBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE17792D5D1B5D00A78C21 /* SpeechBubbleShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +37,22 @@
 		AB4B3BAD2D5A1CBE001D3F63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB4B3BAE2D5A1CBE001D3F63 /* TranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorApp.swift; sourceTree = "<group>"; };
 		AB4B3BB62D5A1F54001D3F63 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		AB4B3BBF2D5A3ED7001D3F63 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AB4B3BC52D5A3F92001D3F63 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AB4B3BC72D5A4088001D3F63 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AB4B3BCA2D5A718E001D3F63 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AB4B3BCD2D5A71F4001D3F63 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		AB4B3BCF2D5A7260001D3F63 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		AB4B3BD22D5A7D19001D3F63 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		AB4B3BD82D5B68D2001D3F63 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		AB4B3BDC2D5B7EA6001D3F63 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		AB4B3BDE2D5B8179001D3F63 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		AB4B3BE02D5B82B7001D3F63 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		AB4B3BE22D5B85AE001D3F63 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		AB4B3BE62D5B8F63001D3F63 /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
+		ABEE17702D5CEA7500A78C21 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		ABEE17762D5D181700A78C21 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		ABEE17792D5D1B5D00A78C21 /* SpeechBubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechBubbleShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +93,11 @@
 		AB4B3BAF2D5A1CBE001D3F63 /* Translator */ = {
 			isa = PBXGroup;
 			children = (
+				AB4B3BB82D5A3D5C001D3F63 /* Presentation */,
 				AB4B3BAB2D5A1CBE001D3F63 /* Preview Content */,
+				AB4B3BD42D5B612F001D3F63 /* Resources */,
 				AB4B3BB42D5A1F1D001D3F63 /* Sopported Files */,
-				AB4B3BAC2D5A1CBE001D3F63 /* Assets.xcassets */,
 				AB4B3BAD2D5A1CBE001D3F63 /* ContentView.swift */,
-				AB4B3BAE2D5A1CBE001D3F63 /* TranslatorApp.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -74,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AB4B3BB52D5A1F44001D3F63 /* Constants */,
+				AB4B3BAC2D5A1CBE001D3F63 /* Assets.xcassets */,
 			);
 			path = "Sopported Files";
 			sourceTree = "<group>";
@@ -84,6 +117,181 @@
 				AB4B3BB62D5A1F54001D3F63 /* Font.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		AB4B3BB82D5A3D5C001D3F63 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BC92D5A7174001D3F63 /* App */,
+				AB4B3BC12D5A3F61001D3F63 /* SettingsModule */,
+				AB4B3BB92D5A3D6E001D3F63 /* MainModule */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AB4B3BB92D5A3D6E001D3F63 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BCC2D5A71DF001D3F63 /* Coordinator */,
+				AB4B3BBA2D5A3D8D001D3F63 /* Model */,
+				AB4B3BBC2D5A3D9E001D3F63 /* View */,
+				AB4B3BBD2D5A3EAD001D3F63 /* ViewModel */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		AB4B3BBA2D5A3D8D001D3F63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BD22D5A7D19001D3F63 /* MainModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB4B3BBC2D5A3D9E001D3F63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BBF2D5A3ED7001D3F63 /* MainView.swift */,
+				ABEE17762D5D181700A78C21 /* ResultView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB4B3BBD2D5A3EAD001D3F63 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BC72D5A4088001D3F63 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB4B3BC12D5A3F61001D3F63 /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BD12D5A773E001D3F63 /* Coordinator */,
+				AB4B3BC22D5A3F6C001D3F63 /* Model */,
+				AB4B3BC32D5A3F74001D3F63 /* View */,
+				AB4B3BC42D5A3F79001D3F63 /* ViewModel */,
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		AB4B3BC22D5A3F6C001D3F63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BE02D5B82B7001D3F63 /* SettingsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB4B3BC32D5A3F74001D3F63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BC52D5A3F92001D3F63 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB4B3BC42D5A3F79001D3F63 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BE22D5B85AE001D3F63 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB4B3BC92D5A7174001D3F63 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BAE2D5A1CBE001D3F63 /* TranslatorApp.swift */,
+				AB4B3BCA2D5A718E001D3F63 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AB4B3BCC2D5A71DF001D3F63 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BCD2D5A71F4001D3F63 /* MainCoordinator.swift */,
+				AB4B3BCF2D5A7260001D3F63 /* MainFlow.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AB4B3BD12D5A773E001D3F63 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BDE2D5B8179001D3F63 /* SettingsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AB4B3BD42D5B612F001D3F63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE176F2D5CEA4F00A78C21 /* Services */,
+				ABEE176E2D5CE9E000A78C21 /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB4B3BD52D5B6830001D3F63 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BE52D5B8F55001D3F63 /* Helper */,
+				AB4B3BD72D5B68C6001D3F63 /* View */,
+				AB4B3BD62D5B68B9001D3F63 /* Model */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		AB4B3BD62D5B68B9001D3F63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BD82D5B68D2001D3F63 /* TabModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB4B3BD72D5B68C6001D3F63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BDC2D5B7EA6001D3F63 /* TabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB4B3BE52D5B8F55001D3F63 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B3BE62D5B8F63001D3F63 /* HideTabBar.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		ABEE176E2D5CE9E000A78C21 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE17782D5D1B4300A78C21 /*  SpeechBubbleShape */,
+				AB4B3BD52D5B6830001D3F63 /* TabBar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ABEE176F2D5CEA4F00A78C21 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE17702D5CEA7500A78C21 /* SpeechRecognizer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ABEE17782D5D1B4300A78C21 /*  SpeechBubbleShape */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE17792D5D1B5D00A78C21 /* SpeechBubbleShape.swift */,
+			);
+			path = " SpeechBubbleShape";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +367,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4B3BC62D5A3F92001D3F63 /* SettingsView.swift in Sources */,
+				AB4B3BE72D5B8F63001D3F63 /* HideTabBar.swift in Sources */,
+				AB4B3BCE2D5A71F4001D3F63 /* MainCoordinator.swift in Sources */,
+				ABEE17712D5CEA7500A78C21 /* SpeechRecognizer.swift in Sources */,
+				AB4B3BDF2D5B8179001D3F63 /* SettingsCoordinator.swift in Sources */,
+				AB4B3BD92D5B68D2001D3F63 /* TabModel.swift in Sources */,
 				AB4B3BB02D5A1CBE001D3F63 /* ContentView.swift in Sources */,
+				AB4B3BE32D5B85AE001D3F63 /* SettingsViewModel.swift in Sources */,
+				ABEE177A2D5D1B5D00A78C21 /* SpeechBubbleShape.swift in Sources */,
+				AB4B3BC02D5A3ED7001D3F63 /* MainView.swift in Sources */,
 				AB4B3BB12D5A1CBE001D3F63 /* TranslatorApp.swift in Sources */,
+				AB4B3BD02D5A7260001D3F63 /* MainFlow.swift in Sources */,
+				ABEE17772D5D181700A78C21 /* ResultView.swift in Sources */,
 				AB4B3BB72D5A1F54001D3F63 /* Font.swift in Sources */,
+				AB4B3BC82D5A4088001D3F63 /* MainViewModel.swift in Sources */,
+				AB4B3BD32D5A7D19001D3F63 /* MainModel.swift in Sources */,
+				AB4B3BDD2D5B7EA6001D3F63 /* TabBarView.swift in Sources */,
+				AB4B3BE12D5B82B7001D3F63 /* SettingsModel.swift in Sources */,
+				AB4B3BCB2D5A718E001D3F63 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,11 +522,14 @@
 				DEVELOPMENT_TEAM = 6YC67WJLSY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record your voice.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app requires speech recognition to convert your voice into text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,11 +554,14 @@
 				DEVELOPMENT_TEAM = 6YC67WJLSY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record your voice.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app requires speech recognition to convert your voice into text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
