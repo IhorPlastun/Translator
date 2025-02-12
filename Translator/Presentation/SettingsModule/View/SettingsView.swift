@@ -19,7 +19,7 @@ struct SettingsView<ViewModel: SettingsViewModel>: View {
                 .fontWeight(.bold)
                 .foregroundStyle(.black100)
                 .frame(height: 58)
-                .padding(.top, 12)
+            
             VStack(spacing: 0){
                 ForEach(arrSettings, id: \.self) { setting in
                     SettingsRow(title: setting)

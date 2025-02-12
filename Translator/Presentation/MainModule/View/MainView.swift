@@ -38,7 +38,7 @@ private extension MainView {
                 .fontWeight(.bold)
                 .foregroundStyle(.black100)
                 .frame(height: 58)
-                .padding(.bottom, 28)
+                .padding(.bottom, 12)
             
             HStack(spacing: 0) {
                 Text(viewModel.isHumanToAnimal ? "HUMAN" : "PET")
@@ -85,7 +85,7 @@ private extension MainView {
                         Image(.microphone2)
                             .resizable()
                             .frame(width: 70, height: 70)
-                            .padding(.top, 44)
+                            .padding(.top, 30)
                         
                         Text("Start Speak")
                             .frame(height: 22)
