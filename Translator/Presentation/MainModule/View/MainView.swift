@@ -39,7 +39,6 @@ private extension MainView {
                 .foregroundStyle(.black100)
                 .frame(height: 58)
                 .padding(.bottom, 12)
-            
             HStack(spacing: 0) {
                 Text(viewModel.isHumanToAnimal ? "HUMAN" : "PET")
                     .font(.body1)
@@ -78,7 +77,7 @@ private extension MainView {
                     viewModel.startRecording()
                 }
             } label: {
-                VStack(spacing: 0){
+                VStack(spacing: 0) {
                     if viewModel.isRecording {
                         soundWaveView()
                     } else {
@@ -118,11 +117,11 @@ private extension MainView {
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .opacity(viewModel.selectedAnimal == .cat ? 1 : 0.6)
-                            
-                        }.frame(width: 70, height: 70)
-                            .background(.blueLight)
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
-                            .padding(.bottom, 12)
+                        }
+                        .frame(width: 70, height: 70)
+                        .background(.blueLight)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .padding(.bottom, 12)
                         
                         Button {
                             viewModel.selectedAnimal = .dog
@@ -130,15 +129,14 @@ private extension MainView {
                             Image(.dog)
                                 .resizable()
                                 .frame(width: 40, height: 40)
-                        }.frame(width: 70, height: 70)
-                            .background(.greenLight)
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
-                            .opacity(viewModel.selectedAnimal == .dog ? 1 : 0.6)
+                        }
+                        .frame(width: 70, height: 70)
+                        .background(.greenLight)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .opacity(viewModel.selectedAnimal == .dog ? 1 : 0.6)
                     }
                     .shadow(color: Color.shadow.opacity(0.1), radius: 40, x: 0, y: 20)
-                    
                 }
-                
             }
         }
         .padding(.horizontal, 35)
@@ -151,7 +149,6 @@ private extension MainView {
             Image(viewModel.selectedAnimal == .dog ? .dog : .cat)
                 .resizable()
                 .frame(width: 184, height: 184)
-            
         }
         .padding(.top, 51)
         .padding(.bottom, 118)
@@ -159,14 +156,23 @@ private extension MainView {
     
     @ViewBuilder
     func soundWaveView() -> some View {
-        HStack(spacing: 4) {
-            ForEach(viewModel.audioLevels.indices, id: \.self) { index in
-                RoundedRectangle(cornerRadius: 4)
-                    .fill(Color.blue)
-                    .frame(width: 4, height: viewModel.audioLevels[index])
-            }        }
-        .frame(width: 140, height: 50)
-        .padding(.top, 51)
+        VStack(spacing: 0) {
+            HStack(spacing: 4) {
+                ForEach(viewModel.audioLevels.indices, id: \.self) { index in
+                    RoundedRectangle(cornerRadius: 4)
+                        .fill(Color.blue)
+                        .frame(width: 4, height: viewModel.audioLevels[index])
+                }
+            }
+            .frame(width: 140, height: 50)
+            .padding(.top, 51)
+            
+            Text("Recording...")
+                .font(.body1)
+                .foregroundStyle(.black100)
+                .fontWeight(.bold)
+        }
+        
     }
 }
 

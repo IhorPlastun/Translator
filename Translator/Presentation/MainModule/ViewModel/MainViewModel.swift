@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+enum AnimalType {
+    case cat
+    case dog
+}
+
 protocol MainViewModel: ObservableObject {
     var selectedAnimal: AnimalType { get set}
     var isHumanToAnimal: Bool { get }
@@ -25,7 +30,6 @@ protocol MainViewModel: ObservableObject {
 class MainViewModelImpl: MainViewModel {
     
     private let navigation: MainNavigation
-    private let model: MainModel
     
     @Published var selectedAnimal: AnimalType = .dog
     @Published var isHumanToAnimal: Bool = true
@@ -34,9 +38,8 @@ class MainViewModelImpl: MainViewModel {
     @Published var recognizedText: String = ""
     private var speechRecognizer = SpeechRecognizer()
     
-    init(navigation: MainNavigation, model: MainModel) {
+    init(navigation: MainNavigation) {
         self.navigation = navigation
-        self.model = model
         bindSpeechRecognizer()
     }
     
@@ -50,9 +53,9 @@ class MainViewModelImpl: MainViewModel {
     
     func startRecording() {
         isRecording = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.speechRecognizer.startRecording()
-            }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            self?.speechRecognizer.startRecording()
+        }
     }
     
     func stopRecording() {
@@ -61,14 +64,17 @@ class MainViewModelImpl: MainViewModel {
         audioLevels = speechRecognizer.audioLevels
         recognizedText = speechRecognizer.recognizedText
         
+        if recognizedText == "Recording..." {
+            recognizedText = "No speech detected"
+        }
         navigation.presentFullScreenConent(.result(recognizedText: recognizedText, image: selectedAnimal))
     }
     
     private func bindSpeechRecognizer() {
-           speechRecognizer.onAudioLevelsChanged = { [weak self] levels in
-               DispatchQueue.main.async {
-                   self?.audioLevels = levels
-               }
-           }
-       }
+        speechRecognizer.onAudioLevelsChanged = { [weak self] levels in
+            DispatchQueue.main.async {
+                self?.audioLevels = levels
+            }
+        }
+    }
 }

@@ -10,7 +10,12 @@ import AVFoundation
 import Speech
 import SwiftUI
 
-class SpeechRecognizer: NSObject, ObservableObject {
+protocol SpeechRecognizerProtocol: ObservableObject {
+    func startRecording()
+    func stopRecording()
+}
+
+class SpeechRecognizer: NSObject, SpeechRecognizerProtocol {
     @Published var isRecording = false
     @Published var recognizedText: String = "Press to speak"
     @Published var audioLevels: [CGFloat] = Array(repeating: 0, count: 20)
@@ -27,7 +32,7 @@ class SpeechRecognizer: NSObject, ObservableObject {
         requestPermission()
     }
     
-    func requestPermission() {
+    private func requestPermission() {
         SFSpeechRecognizer.requestAuthorization { authStatus in
             DispatchQueue.main.async {
                 switch authStatus {
@@ -71,7 +76,8 @@ class SpeechRecognizer: NSObject, ObservableObject {
         audioEngine.prepare()
         try? audioEngine.start()
         
-        recognitionTask = speechRecognizer?.recognitionTask(with: request) { result, error in
+        recognitionTask = speechRecognizer?.recognitionTask(with: request) { [weak self] result, error in
+            guard let self = self else { return }
             if let result = result {
                 DispatchQueue.main.async {
                     self.recognizedText = result.bestTranscription.formattedString
@@ -79,7 +85,7 @@ class SpeechRecognizer: NSObject, ObservableObject {
             }
             
             if error != nil || result?.isFinal == true {
-                self.stopRecording()
+                stopRecording()
             }
         }
     }
@@ -88,11 +94,13 @@ class SpeechRecognizer: NSObject, ObservableObject {
         isRecording = false
         audioEngine.stop()
         audioEngine.inputNode.removeTap(onBus: 0)
+        recognitionTask?.cancel()
         request = nil
         recognitionTask = nil
         audioLevels = Array(repeating: 0, count: 20)
-        DispatchQueue.main.async {
-            self.onAudioLevelsChanged?(self.audioLevels)
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            onAudioLevelsChanged?(audioLevels)
         }
     }
     
@@ -105,7 +113,8 @@ class SpeechRecognizer: NSObject, ObservableObject {
         let scaling: CGFloat = 200
         let level = base + (CGFloat(rms) * scaling)
         
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
             self.audioLevels.append(level)
             if self.audioLevels.count > 20 {
                 self.audioLevels.removeFirst()

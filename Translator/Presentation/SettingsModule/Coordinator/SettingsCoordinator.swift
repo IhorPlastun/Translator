@@ -15,10 +15,7 @@ struct SettingsCoordinator: View, SettingsNavigation {
     @State private var path = NavigationPath()
     
     var body: some View {
-        NavigationStack(path: $path) {
-            MakeView()
-            
-        }
+        MakeView()
     }
 }
 
@@ -26,10 +23,11 @@ struct SettingsCoordinator: View, SettingsNavigation {
 private extension SettingsCoordinator {
     @ViewBuilder
     func MakeView() -> some View {
-        let model: SettingsModel = SettingsModelImpl()
-        let viewModel = SettingsViewModelImpl(navigation: self, model: model)
+        let viewModel = SettingsViewModelImpl(navigation: self)
         let View = SettingsView(viewModel: viewModel)
         
-        View
+        NavigationStack(path: $path) {
+            View
+        }
     }
 }

@@ -15,12 +15,4 @@ enum MainFlow {
             String(describing: self)
         }
     }
-    
-    enum Screen: Hashable, Identifiable {
-        case settings
-        
-        var id: String {
-            String(describing: self)
-        }
-    }
 }

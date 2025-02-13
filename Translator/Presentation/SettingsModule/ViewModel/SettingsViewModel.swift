@@ -8,20 +8,16 @@
 import SwiftUI
 
 protocol SettingsViewModel: ObservableObject {
-    func pushMainModule()
+    var arrSettings: [String] { get }
 }
 
 class SettingsViewModelImpl: SettingsViewModel {
     
     private let navigation: SettingsNavigation
-    private let model: SettingsModel
     
-    init(navigation: SettingsNavigation, model: SettingsModel) {
+    let arrSettings = ["Rate Us", "Share App", "Contact Us", "Restore Purchases", "Privacy Policy", "Terms of Use"]
+    
+    init(navigation: SettingsNavigation) {
         self.navigation = navigation
-        self.model = model
-    }
-    
-    func pushMainModule() {
-        
     }
 }

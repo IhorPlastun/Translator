@@ -24,7 +24,7 @@ struct ResultView: View {
                 }.frame(width: 48, height: 48)
                     .background(.light)
                     .clipShape(RoundedRectangle(cornerRadius: 25))
-                    
+                
                 Spacer()
                 
                 Text("Result")
@@ -52,13 +52,13 @@ struct ResultView: View {
                 
                 SpeechBubbleShape()
                     .fill(LinearGradient(
-                            gradient: Gradient(stops: [
-                                .init(color: Color.blueDark.opacity(0.4), location: 0.1),
-                                .init(color: Color.blueDark.opacity(1), location: 1)
-                            ]),
-                            startPoint: .top,
-                            endPoint: .bottom
-                        ))
+                        gradient: Gradient(stops: [
+                            .init(color: Color.blueDark.opacity(0.4), location: 0.1),
+                            .init(color: Color.blueDark.opacity(1), location: 1)
+                        ]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    ))
                     .frame(width: 12, height: 169.25)
                     .rotationEffect(.degrees(30))
                     .offset(x: 80, y: 130)
@@ -70,7 +70,6 @@ struct ResultView: View {
                 .resizable()
                 .frame(width: 184, height: 184)
                 .padding(.top, 125)
-
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(  LinearGradient(

@@ -18,16 +18,15 @@
 		AB4B3BCB2D5A718E001D3F63 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BCA2D5A718E001D3F63 /* AppCoordinator.swift */; };
 		AB4B3BCE2D5A71F4001D3F63 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BCD2D5A71F4001D3F63 /* MainCoordinator.swift */; };
 		AB4B3BD02D5A7260001D3F63 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BCF2D5A7260001D3F63 /* MainFlow.swift */; };
-		AB4B3BD32D5A7D19001D3F63 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BD22D5A7D19001D3F63 /* MainModel.swift */; };
 		AB4B3BD92D5B68D2001D3F63 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BD82D5B68D2001D3F63 /* TabModel.swift */; };
 		AB4B3BDD2D5B7EA6001D3F63 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BDC2D5B7EA6001D3F63 /* TabBarView.swift */; };
 		AB4B3BDF2D5B8179001D3F63 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BDE2D5B8179001D3F63 /* SettingsCoordinator.swift */; };
-		AB4B3BE12D5B82B7001D3F63 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BE02D5B82B7001D3F63 /* SettingsModel.swift */; };
 		AB4B3BE32D5B85AE001D3F63 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BE22D5B85AE001D3F63 /* SettingsViewModel.swift */; };
 		AB4B3BE72D5B8F63001D3F63 /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B3BE62D5B8F63001D3F63 /* HideTabBar.swift */; };
 		ABEE17712D5CEA7500A78C21 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE17702D5CEA7500A78C21 /* SpeechRecognizer.swift */; };
 		ABEE17772D5D181700A78C21 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE17762D5D181700A78C21 /* ResultView.swift */; };
 		ABEE177A2D5D1B5D00A78C21 /* SpeechBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE17792D5D1B5D00A78C21 /* SpeechBubbleShape.swift */; };
+		ABEE177E2D5DE01800A78C21 /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE177D2D5DE01800A78C21 /* SettingsRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,16 +42,15 @@
 		AB4B3BCA2D5A718E001D3F63 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AB4B3BCD2D5A71F4001D3F63 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		AB4B3BCF2D5A7260001D3F63 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
-		AB4B3BD22D5A7D19001D3F63 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		AB4B3BD82D5B68D2001D3F63 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		AB4B3BDC2D5B7EA6001D3F63 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		AB4B3BDE2D5B8179001D3F63 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
-		AB4B3BE02D5B82B7001D3F63 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		AB4B3BE22D5B85AE001D3F63 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		AB4B3BE62D5B8F63001D3F63 /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
 		ABEE17702D5CEA7500A78C21 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		ABEE17762D5D181700A78C21 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		ABEE17792D5D1B5D00A78C21 /* SpeechBubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechBubbleShape.swift; sourceTree = "<group>"; };
+		ABEE177D2D5DE01800A78C21 /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,19 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				AB4B3BCC2D5A71DF001D3F63 /* Coordinator */,
-				AB4B3BBA2D5A3D8D001D3F63 /* Model */,
 				AB4B3BBC2D5A3D9E001D3F63 /* View */,
 				AB4B3BBD2D5A3EAD001D3F63 /* ViewModel */,
 			);
 			path = MainModule;
-			sourceTree = "<group>";
-		};
-		AB4B3BBA2D5A3D8D001D3F63 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				AB4B3BD22D5A7D19001D3F63 /* MainModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		AB4B3BBC2D5A3D9E001D3F63 /* View */ = {
@@ -169,25 +158,17 @@
 			isa = PBXGroup;
 			children = (
 				AB4B3BD12D5A773E001D3F63 /* Coordinator */,
-				AB4B3BC22D5A3F6C001D3F63 /* Model */,
 				AB4B3BC32D5A3F74001D3F63 /* View */,
 				AB4B3BC42D5A3F79001D3F63 /* ViewModel */,
 			);
 			path = SettingsModule;
 			sourceTree = "<group>";
 		};
-		AB4B3BC22D5A3F6C001D3F63 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				AB4B3BE02D5B82B7001D3F63 /* SettingsModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		AB4B3BC32D5A3F74001D3F63 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				AB4B3BC52D5A3F92001D3F63 /* SettingsView.swift */,
+				ABEE177D2D5DE01800A78C21 /* SettingsRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,9 +363,8 @@
 				ABEE17772D5D181700A78C21 /* ResultView.swift in Sources */,
 				AB4B3BB72D5A1F54001D3F63 /* Font.swift in Sources */,
 				AB4B3BC82D5A4088001D3F63 /* MainViewModel.swift in Sources */,
-				AB4B3BD32D5A7D19001D3F63 /* MainModel.swift in Sources */,
 				AB4B3BDD2D5B7EA6001D3F63 /* TabBarView.swift in Sources */,
-				AB4B3BE12D5B82B7001D3F63 /* SettingsModel.swift in Sources */,
+				ABEE177E2D5DE01800A78C21 /* SettingsRow.swift in Sources */,
 				AB4B3BCB2D5A718E001D3F63 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
